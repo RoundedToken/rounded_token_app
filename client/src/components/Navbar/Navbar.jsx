@@ -27,17 +27,6 @@ const Navbar = () => {
                     </h3>
                 </Link>
             </div>
-            <div className={page === 'about' ? styles.navbarItemActive : styles.navbarItem}>
-                <Link
-                    title={lang === 'eng' ? 'Go to about page' : 'Перейти на страницу описания'}
-                    to={'/about'}
-                    onClick={() => dispatch(setPage('about'))}
-                >
-                    <h3>
-                        <Text eng={'About'} rus="Описание" />
-                    </h3>
-                </Link>
-            </div>
             {!isAuth && (
                 <>
                     <div className={page === 'auth' ? styles.navbarItemActive : styles.navbarItem}>
