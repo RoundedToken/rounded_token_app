@@ -1,0 +1,77 @@
+.output {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    width: max-content;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: var(--first-color);
+    box-shadow: 3px 3px 3px var(--image-color);
+
+    th,
+    tr,
+    td {
+        background-color: var(--second-color);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    th {
+        border: 1px solid var(--text-color);
+        text-shadow: 1px 1px 1px var(--first-color);
+    }
+
+    td {
+        font-size: small;
+        text-align: center;
+        box-shadow: 1px 1px 1px var(--image-color);
+    }
+
+    tr:hover td {
+        text-decoration-line: underline;
+        box-shadow: 1px 1px 1px var(--text-color);
+    }
+
+    table {
+        border-spacing: 5px;
+        margin-top: 2px;
+    }
+}
+
+.output:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.table {
+    max-width: 900px;
+    overflow: scroll;
+}
+
+.screenSize {
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    .filterDark {
+        filter: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%)
+            contrast(94%);
+    }
+
+    .filterLight {
+        filter: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%)
+            contrast(78%);
+    }
+}

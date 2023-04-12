@@ -1,0 +1,65 @@
+.technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+    padding: 20px;
+    width: max-content;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: var(--first-color);
+    box-shadow: 3px 3px 3px var(--image-color);
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        background: linear-gradient(
+            to right,
+            rgb(255, 95, 94),
+            var(--text-color),
+            rgb(25, 184, 76)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    img {
+        border: 0px;
+        border-radius: 10px;
+    }
+
+    h5 {
+        margin: 0px;
+    }
+}
+
+.technologies:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.footer {
+    margin-top: 25px;
+}
+
+.rowEven {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowOdd {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}

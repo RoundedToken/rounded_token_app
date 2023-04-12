@@ -1,0 +1,32 @@
+.limitOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    select {
+        outline: none;
+        color: var(--text-color);
+        background-color: var(--second-color);
+        border: 0;
+        border-radius: 5px;
+        height: 28px;
+        padding-left: 2px;
+        box-shadow: 1px 1px 1px var(--image-color);
+        text-shadow: 1px 1px 1px var(--first-color);
+    }
+
+    select:hover {
+        box-shadow: 1px 1px 1px var(--text-color);
+    }
+}
+
+.editIcon {
+    filter: var(--filter-image) drop-shadow(2px 2px 2px var(--first-color));
+}
+
+.tooltip {
+    background-color: var(--alternative-color);
+    color: var(--image-color);
+    box-shadow: 2px 2px 2px var(--image-color);
+}

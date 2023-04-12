@@ -1,0 +1,54 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    margin-bottom: 20px;
+    z-index: 1;
+    box-shadow: 3px 3px 3px var(--image-color);
+
+    .tooltip {
+        background-color: var(--alternative-color);
+        font-size: 14px;
+        box-shadow: 0px 1px 2px 1px var(--alternative-color);
+    }
+}
+
+.header:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.logOut {
+    align-self: center;
+    border: 3px solid var(--image-color);
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 5px;
+    color: var(--image-color);
+    text-shadow: 2px 2px 3px var(--second-color);
+    box-shadow: 2px 2px 3px var(--second-color);
+}
+
+.logOut:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.rightBlock {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    filter: var(--red-filter) drop-shadow(2px 2px 3px var(--second-color));
+}
+
+.green {
+    filter: var(--green-filter);
+}

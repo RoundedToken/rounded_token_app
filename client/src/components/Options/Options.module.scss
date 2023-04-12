@@ -1,0 +1,77 @@
+.themeSwitcher {
+    display: flex;
+    position: absolute;
+    left: 0;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 3px var(--second-color));
+    width: 48px;
+    height: 48px;
+    transform: rotate(360def);
+    transition: transform 1.5s;
+}
+
+.settingsRotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 3px var(--second-color));
+    width: 48px;
+    height: 48px;
+    transform: rotate(-360deg);
+    transition: transform 1.5s;
+}
+
+.toggle {
+    font-size: 48px;
+    color: var(--image-color);
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 3px var(--second-color));
+}
+
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 3px var(--second-color);
+    font-size: 24px;
+    color: var(--image-color);
+}
+
+.langSwitcher:hover {
+    color: var(--text-color);
+}
+
+.toggle:hover {
+    color: var(--text-color);
+}
+
+.filterDark {
+    filter: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%) contrast(78%);
+}
+
+.filterDark:hover {
+    filter: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%) contrast(94%);
+}
+
+.filterLight {
+    filter: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%) contrast(94%);
+}
+
+.filterLight:hover {
+    filter: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%) contrast(78%);
+}

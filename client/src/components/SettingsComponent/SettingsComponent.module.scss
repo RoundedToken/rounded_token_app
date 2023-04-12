@@ -1,0 +1,178 @@
+.settingsComponentClose {
+    height: 0px;
+    width: 0px;
+    background-color: var(--first-color);
+    margin-inline: auto;
+    border-radius: 15px;
+    opacity: 0;
+    transition: height 1.5s, width 1.5s;
+}
+
+.settingsComponentOpen {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: var(--first-color);
+    padding-inline: 25px;
+    gap: 25px;
+    box-shadow: 3px 3px 3px var(--image-color);
+    opacity: 1;
+    transition: height 1.5s, width 1.5s;
+}
+
+.settingsComponentOpen:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.decimals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .input {
+        width: 331px; /* width control*/
+        position: relative;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            padding: 0;
+            right: 0;
+            right: 5px;
+            top: 0;
+            top: 7px;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        img {
+            filter: drop-shadow(1px 1px 1px var(--first-color));
+        }
+
+        input {
+            outline: 0px;
+            margin-inline: 5px;
+            border: 0px;
+            border-radius: 5px;
+            height: 28px;
+            width: 100%;
+            padding: 0px;
+            background-color: var(--second-color);
+            color: var(--image-color);
+            text-align: center;
+            box-shadow: 1px 1px 1px var(--image-color);
+            text-shadow: 1px 1px 1px var(--first-color);
+        }
+
+        input:focus {
+            box-shadow: 1px 1px 1px var(--text-color);
+            color: var(--text-color);
+        }
+
+        input:hover {
+            box-shadow: 1px 1px 1px var(--text-color);
+        }
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    width: 20%;
+    height: 20%;
+    border-radius: 15px;
+    background-color: var(--first-color);
+    box-shadow: 3px 3px 3px var(--image-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+
+    input {
+        outline: 0px;
+        margin-inline: 5px;
+        border: 0px;
+        border-radius: 5px;
+        height: 36px;
+        width: 128px;
+        padding: 0px;
+        background-color: var(--second-color);
+        color: var(--image-color);
+        text-align: center;
+        box-shadow: 2px 2px 2px var(--image-color);
+        text-shadow: 2px 2px 2px var(--first-color);
+        font-size: 24px;
+    }
+
+    input:focus {
+        box-shadow: 2px 2px 2px var(--text-color);
+        color: var(--text-color);
+    }
+
+    input:hover {
+        box-shadow: 2px 2px 2px var(--text-color);
+    }
+}
+.modalContent:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    img {
+        filter: drop-shadow(2px 2px 2px var(--second-color));
+    }
+}
+
+.editButton {
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.editIcon {
+    filter: var(--filter-image) drop-shadow(2px 2px 2px var(--second-color));
+}
+
+.tooltip {
+    background-color: var(--alternative-color);
+    color: var(--image-color);
+    box-shadow: 2px 2px 2px var(--image-color);
+}

@@ -1,0 +1,147 @@
+html,
+body,
+#root,
+.App {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    ::selection {
+        color: white;
+        background-color: var(--text-color);
+    }
+
+    #light {
+        --first-color: rgb(191, 194, 197);
+        --second-color: white;
+        --alternative-color: rgb(36, 37, 38);
+        --text-color: rgb(119 76 181);
+        --image-color: rgb(187 144 248);
+        --filter-image: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%)
+            contrast(78%);
+    }
+
+    #dark {
+        --first-color: rgb(36, 37, 38);
+        --second-color: rgb(27 27 29);
+        --alternative-color: rgb(191, 194, 197);
+        --text-color: rgb(187 144 248);
+        --image-color: rgb(119 76 181);
+        --filter-image: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%)
+            contrast(94%);
+    }
+
+    //REACT-TOASTIFY
+    --toastify-color-dark: rgb(36, 37, 38);
+    --toastify-color-light: rgb(191, 194, 197);
+    --toastify-icon-color-success: var(--green);
+    --toastify-color-progress-success: var(--green);
+    --toastify-text-color-light: rgb(119 76 181);
+    --toastify-text-color-dark: rgb(187 144 248);
+    --toastify-icon-color-error: var(--red);
+    --toastify-color-progress-error: var(--red);
+
+    .Toastify__toast-theme--dark {
+        box-shadow: 2px 2px 2px rgb(119 76 181);
+        text-shadow: 1px 1px 1px rgb(27 27 29);
+    }
+
+    .Toastify__toast-theme--dark:hover {
+        box-shadow: 2px 2px 2px rgb(187 144 248);
+    }
+
+    .Toastify__toast-theme--light {
+        box-shadow: 2px 2px 2px rgb(187 144 248);
+        text-shadow: 1px 1px 1px white;
+    }
+
+    .Toastify__toast-theme--light:hover {
+        box-shadow: 2px 2px 2px rgb(119 76 181);
+    }
+
+    .Toastify__progress-bar-theme--light {
+        box-shadow: 3px 3px 3px var(--second-color);
+    }
+    .Toastify__progress-bar-theme--dark {
+        box-shadow: 3px 3px 3px var(--second-color);
+    }
+
+    .Toastify__close-button > svg {
+        filter: drop-shadow(2px 2px 2px var(--image-color));
+    }
+
+    // VARIABLES
+    --red-filter: invert(53%) sepia(63%) saturate(2499%) hue-rotate(323deg) brightness(100%)
+        contrast(103%);
+    --green-filter: invert(53%) sepia(49%) saturate(2830%) hue-rotate(102deg) brightness(99%)
+        contrast(80%);
+    --green: rgb(25, 184, 76);
+    --red: rgb(255, 95, 94);
+}
+
+a {
+    color: var(--image-color);
+    height: min-content;
+    text-decoration: none;
+    width: max-content;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px var(--second-color);
+}
+
+h2 {
+    margin: 0px;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px var(--second-color);
+}
+
+h3 {
+    margin: 0px;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px var(--second-color);
+}
+
+h4 {
+    margin: 0px;
+    text-shadow: 1px 1px 1px var(--second-color);
+}
+
+h5 {
+    margin: 0px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px var(--second-color);
+}
+
+a:visited {
+    color: var(--image-color);
+}
+a:active {
+    color: var(--image-color);
+}
+a:hover {
+    color: var(--text-color);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    background-color: var(--second-color);
+}

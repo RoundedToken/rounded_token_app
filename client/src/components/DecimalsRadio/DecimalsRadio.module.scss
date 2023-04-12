@@ -1,0 +1,32 @@
+.decimalRadio {
+    background-color: var(--second-color);
+    border-radius: 5px;
+    margin-inline: 2px;
+
+    input:checked + label {
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+        border-color: 1.5s;
+    }
+}
+
+.input {
+    display: none;
+}
+.label {
+    display: flex;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px var(--image-color);
+    text-shadow: 1px 1px 2px var(--first-color);
+    font-size: large;
+    color: var(--image-color);
+}
+
+.label:hover {
+    box-shadow: 1px 1px 1px var(--text-color);
+}

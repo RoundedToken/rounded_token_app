@@ -1,0 +1,86 @@
+.scene {
+    width: 64px;
+    height: 64px;
+    perspective: 196px;
+    animation: rotate 15s infinite linear;
+    @keyframes rotate {
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    transform: translateX(64px) rotateY(90deg);
+    background-color: red;
+}
+
+.right {
+    transform: rotateY(-90deg) rotateZ(90deg);
+    background-color: blue;
+}
+
+// .cube:hover .front {
+//     transform: translateZ(64px);
+// }
+
+// .cube:hover .left {
+//     transform: rotateY(-90deg) translateZ(32px) translateX(32px), translateY(32px);
+//     width: 96px;
+// }
+
+// .cube:hover .bottom {
+//     transform: rotateX(-90deg) translateZ(32px);
+//     height: 96px;
+// }
+
+// .front {
+//     transform: rotateY(0deg) translateZ(32px);
+//     transition: 1s;
+//     background-color: green;
+// }
+
+// .right {
+//     transform: rotateY(90deg) translateZ(32px);
+// }
+// .back {
+//     transform: rotateY(180deg) translateZ(32px);
+// }
+// .left {
+//     transform: rotateY(-90deg) translateZ(32px);
+//     transition: 1s;
+//     background-color: blue;
+//     opacity: 0.5;
+// }
+// .top {
+//     transform: rotateX(90deg) translateZ(32px);
+// }
+// .bottom {
+//     transform: rotateX(-90deg) translateZ(32px);
+//     background-color: red;
+//     transition: 1s;
+// }
+
+.tooltip {
+    background-color: var(--alternative-color);
+    color: var(--image-color);
+    text-shadow: 1px 1px 1px var(--second-color);
+    box-shadow: 2px 2px 2px var(--image-color);
+}

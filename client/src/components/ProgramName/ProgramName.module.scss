@@ -1,0 +1,42 @@
+.programName {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-color: var(--image-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+    box-shadow: 2px 2px 3px var(--second-color);
+}
+
+.logoCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCont:hover {
+    .logo {
+        background-color: var(--text-color);
+    }
+}
+
+.filterLight {
+    filter: invert(85%) sepia(0%) saturate(1369%) hue-rotate(23deg) brightness(89%) contrast(101%);
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
+
+.filterDark {
+    filter: invert(10%) sepia(9%) saturate(264%) hue-rotate(169deg) brightness(88%) contrast(87%);
+
+    transform: rotate(-360deg);
+    transition: transform 1.5s;
+}

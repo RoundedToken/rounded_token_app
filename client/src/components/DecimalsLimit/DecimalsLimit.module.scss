@@ -1,0 +1,98 @@
+.decimalsLimit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 1px 1px 1px var(--second-color);
+
+    .input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18.3px;
+    }
+
+    button {
+        background-color: transparent;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filterLight {
+        filter: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%)
+            contrast(78%) drop-shadow(1px 1px 1px var(--second-color));
+    }
+
+    .filterDark {
+        filter: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%)
+            contrast(94%) drop-shadow(1px 1px 1px var(--second-color));
+    }
+
+    /*********** Baseline, reset styles ***********/
+    input[type='range'] {
+        // -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        width: 256.71px; /* width control */
+    }
+
+    /* Removes default focus */
+    input[type='range']:focus {
+        outline: none;
+    }
+
+    /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+    /* slider track */
+    input[type='range']::-webkit-slider-runnable-track {
+        background-color: var(--image-color);
+        border-radius: 0.5rem;
+        height: 0.5rem;
+        box-shadow: 2px 2px 2px var(--second-color);
+        cursor: ew-resize;
+    }
+
+    /* slider thumb */
+    input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        margin-top: -6px; /* Centers thumb on the track */
+        background-color: var(--text-color);
+        border-radius: 2px;
+        height: 20px;
+        width: 5px;
+        box-shadow: 1px 1px 1px var(--second-color);
+        cursor: ew-resize;
+    }
+
+    /*********** Firefox styles ***********/
+    /* slider track */
+    input[type='range']::-moz-range-track {
+        background-color: var(--image-color);
+        border-radius: 0.5rem;
+        height: 0.5rem;
+        box-shadow: 2px 2px 2px var(--second-color);
+        cursor: ew-resize;
+    }
+
+    /* slider thumb */
+    input[type='range']::-moz-range-thumb {
+        background-color: var(--text-color);
+        border: none; /*Removes extra border that FF applies*/
+        border-radius: 2px;
+        height: 20px;
+        width: 5px;
+        box-shadow: 1px 1px 1px var(--second-color);
+        cursor: ew-resize;
+    }
+}

@@ -1,0 +1,18 @@
+.maxApprove {
+    position: absolute;
+    top: 5px;
+    right: 55px;
+
+    .tooltip {
+        background-color: var(--alternative-color);
+        color: var(--image-color);
+        text-shadow: 1px 1px 1px var(--second-color);
+        box-shadow: 2px 2px 2px var(--image-color);
+    }
+
+    h5 {
+        color: var(--text-color);
+        margin: 0;
+        font-size: large;
+    }
+}

@@ -1,0 +1,67 @@
+.inputBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--first-color);
+    box-shadow: 3px 3px 3px var(--image-color);
+
+    input {
+        width: 100%;
+        outline: 0px;
+        border: 0px;
+        border-radius: 5px;
+        height: 28px;
+        padding: 0px;
+        background-color: var(--second-color);
+        color: var(--image-color);
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 1px 1px 1px var(--image-color);
+        text-shadow: 1px 1px 1px var(--second-color);
+    }
+
+    input:focus {
+        color: var(--text-color);
+        box-shadow: 1px 1px 1px var(--text-color);
+    }
+
+    input:hover {
+        box-shadow: 1px 1px 1px var(--text-color);
+    }
+}
+
+.inputBlock:hover {
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+
+.inputCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 400px;
+    position: relative;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        padding: 0;
+        right: 0;
+        right: 5px;
+        top: 0;
+        top: 7px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+.close {
+    filter: drop-shadow(1px 1px 1px var(--first-color));
+}

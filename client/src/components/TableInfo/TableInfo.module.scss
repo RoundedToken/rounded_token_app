@@ -1,0 +1,20 @@
+.tableInfo {
+    position: absolute;
+    top: 2px;
+    right: 27px;
+    cursor: pointer;
+
+    .tooltip {
+        background-color: var(--alternative-color);
+        color: var(--image-color);
+        box-shadow: 2px 2px 2px var(--image-color);
+    }
+}
+
+.filterDark {
+    filter: invert(75%) sepia(58%) saturate(4161%) hue-rotate(214deg) brightness(102%) contrast(94%);
+}
+
+.filterLight {
+    filter: invert(30%) sepia(84%) saturate(1270%) hue-rotate(242deg) brightness(84%) contrast(78%);
+}
