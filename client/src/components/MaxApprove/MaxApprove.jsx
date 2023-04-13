@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Tooltip } from 'react-tooltip';
-import copyFunction from '../../Functions/CopyFunction';
-import maxApproveF from '../../Functions/MaxApproveFunction';
+import copyFunction from '../../helpers/CopyFunction';
+import maxApproveF from '../../helpers/MaxApproveFunction';
 import Text from '../Text/Text';
 import styles from './MaxApprove.module.scss';
 

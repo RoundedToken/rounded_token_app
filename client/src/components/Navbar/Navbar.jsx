@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -11,12 +11,18 @@ const Navbar = () => {
     const isAuth = useSelector((state) => state.auth.isAuth);
     const page = useSelector((state) => state.page.page);
     const dispatch = useDispatch();
+    const mainRef = useRef(null);
+    const loginRef = useRef(null);
+    const signRef = useRef(null);
 
     useEffect(() => {}, [page]);
 
     return (
         <div className={styles.navbar}>
-            <div className={page === '' ? styles.navbarItemActive : styles.navbarItem}>
+            <div
+                ref={mainRef}
+                className={page === '' ? styles.navbarItemActive : styles.navbarItem}
+            >
                 <Link
                     title={lang === 'eng' ? 'Go to main page' : 'Перейти на главную страницу'}
                     to={'/'}
@@ -29,7 +35,10 @@ const Navbar = () => {
             </div>
             {!isAuth && (
                 <>
-                    <div className={page === 'auth' ? styles.navbarItemActive : styles.navbarItem}>
+                    <div
+                        ref={loginRef}
+                        className={page === 'auth' ? styles.navbarItemActive : styles.navbarItem}
+                    >
                         <Link
                             title={
                                 lang === 'eng'
@@ -45,6 +54,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div
+                        ref={signRef}
                         className={
                             page === 'register' ? styles.navbarItemActive : styles.navbarItem
                         }

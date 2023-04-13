@@ -1,5 +1,5 @@
 import React from 'react';
-import main from '../../Functions/RoundedTokenFunction';
+import main from '../../helpers/RoundedTokenFunction';
 import styles from './OutputWindow.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import Footer from '../Footer/Footer';
