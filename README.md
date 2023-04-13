@@ -4,7 +4,7 @@ Designed to round the values of ERC20 tokens in EVM (ethereum) compatible blockc
 Allows you to increase the number of zero bytes in the transaction (calldata), which leads to a (small) reduction in its cost.
 
 Also, for educational purposes, advanced authorization with two JWT tokens (access and refresh) and mail activation is implemented.
-## Fron-end stack 
+## Front-end stack 
 
 <p>
 <img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231820036-c18eedb0-8f17-4316-988b-12f1e331b2f3.svg'/>
