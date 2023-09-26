@@ -1,10 +1,11 @@
-# [***RoundedToken***](https://rounded-token-app-static.onrender.com) web application
+# [***RoundedToken***](https://rounded-token-app-static.onrender.com)
 ## Description
 Designed to round the values of ERC20 tokens in EVM (ethereum) compatible blockchains.
 Allows you to increase the number of zero bytes in the transaction (calldata), which leads to a (small) reduction in its cost.
 
-Also, for educational purposes, advanced authorization with two JWT tokens (access and refresh) and mail activation is implemented. Also implemented i18n and theme switcher.
-## Front-end stack
+## Technologies
+
+### Front-end stack
 
 <p>
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/yacht_shop_admin/assets/117864556/1b62b65e-4f98-4380-af9f-b88054427eae'/>
@@ -18,7 +19,7 @@ Also, for educational purposes, advanced authorization with two JWT tokens (acce
 <img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231823330-a690159b-92b3-4127-a6f2-52ef8356371e.svg'/>
 <img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231824795-f6d80ee1-e748-49fc-99ce-c24e961ae2f5.svg'/>
 
-## Back-end stack
+### Back-end stack
 
 <p>
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/yacht_shop_admin/assets/117864556/1b62b65e-4f98-4380-af9f-b88054427eae'/>
@@ -30,10 +31,12 @@ Also, for educational purposes, advanced authorization with two JWT tokens (acce
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/rounded_token_app/assets/117864556/3fd7282e-b0ea-43bf-8bbd-8c61bb9de533'/>
 &emsp;
 
-
-
-
-
+## About the work done
+- Developed a complex function to calculate rounded token values
+- Implemented many settings for different table displays
+- Developed `advanced authorizatio`n with two `JWT` tokens (access and refresh) and `mail activation`
+- Implemented `i18n`
+- Implemented custom `dark and light themes`
 
 
 
