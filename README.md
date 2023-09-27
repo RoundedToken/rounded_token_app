@@ -10,7 +10,7 @@ Allows you to increase the number of zero bytes in the transaction (calldata), w
 <p>
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/yacht_shop_admin/assets/117864556/1b62b65e-4f98-4380-af9f-b88054427eae'/>
 &emsp;
-<img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231820036-c18eedb0-8f17-4316-988b-12f1e331b2f3.svg'/>
+<img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/yacht_shop/assets/117864556/59e73ff5-65ac-4126-a95f-5135fe2edab0'/>
 &emsp;
 <img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231822337-e7f5ac40-8640-4be1-b23a-d43fd642262c.svg'/>
 &emsp;
