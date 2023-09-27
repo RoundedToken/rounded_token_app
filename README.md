@@ -31,6 +31,11 @@ Allows you to increase the number of zero bytes in the transaction (calldata), w
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/rounded_token_app/assets/117864556/3fd7282e-b0ea-43bf-8bbd-8c61bb9de533'/>
 &emsp;
 
+### IaC and CI/CD
+
+<img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/rounded_token_app/assets/117864556/51c33644-07db-45ac-b47c-81d340db2bfa'/>
+
+
 ## About the work done
 - Developed a complex function to calculate rounded token values
 - Implemented many settings for different table displays
