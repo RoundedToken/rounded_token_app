@@ -27,7 +27,7 @@ Allows you to increase the number of zero bytes in the transaction (calldata), w
 &emsp;
 <img background-color='#ECD53F' width='64' src='https://user-images.githubusercontent.com/117864556/231824314-f028d77d-49c6-4e79-b2ef-414ec9e0ca6d.svg'/>
 
-### IaC and CI/CD
+### DevOps stack
 
 <img background-color='#ECD53F' width='64' src='https://github.com/RoundedToken/rounded_token_app/assets/117864556/51c33644-07db-45ac-b47c-81d340db2bfa'/>
 
